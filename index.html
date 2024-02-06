@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <img class="pexel_img" src="./img/images (4).jfif" alt="">
+            <h1>Pexels</h1>
+            <div class="inputs">
+                <select id="mediaType" class="select">
+                    <option value="image">photo</option>
+                    <option value="video">video</option>
+                </select>
+                <input id="searchInput" type="text" placeholder="Поиск бесплатных изображений">
+                <button class="btn" onclick="fetchMedia()"><span><i
+                            class="fa-solid fa-magnifying-glass"></i></span></button>
+            </div>
+            <select class="select">
+                <option value="photo">Поиск фото</option>
+                <option value="search_photo">Искать бесплатные фотографии</option>
+                <option value="photos">Популярные категории поиска</option>
+                <option value="table">Таблица лидеров</option>
+                <option value="chelench">Челенжди</option>
+                <option value="free">Бесплатные видео</option>
+                <option value="block">Блог Pexels</option>
+            </select>
+            <a class="regis" href="#">Лицензия</a>
+            <a class="regis" href="#">Загрузка</a>
+            <a class="regis1" href="#">...</a>
+            <button>Регистрация</button>
+        </nav>
+    </div>
+    <br>
+    <hr>
+    <h1 id="h1"></h1>
+    <div id="mediaContainer" class="photo_video_container"></div>
+    <script src="./main.js"></script>
+</body>
+</html>
